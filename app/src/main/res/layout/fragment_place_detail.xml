@@ -8,7 +8,7 @@
 
     <LinearLayout
         android:id="@+id/gravity"
-        android:layout_behavior="@string/appbar_scrolling_view_behavior"
+
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
@@ -45,7 +45,7 @@
             android:layout_marginBottom="30dp"/>
 
         <Button
-            android:id="@+id/bPlaces"
+            android:id="@+id/bPlaces1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Suggested Places" />

@@ -1,5 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/nav_graph">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/placesv2">
 
+    <fragment
+        android:id="@+id/placesv2"
+        android:name="com.example.fragment_app.Placesv2"
+        android:label="fragment_placesv2"
+        tools:layout="@layout/fragment_placesv2" >
+        <action
+            android:id="@+id/action_placesv2_to_placeDetailv2"
+            app:destination="@id/placeDetailv2" />
+        <action
+            android:id="@+id/action_placesv2_to_placeDetail2v2"
+            app:destination="@id/placeDetail2v2" />
+        <action
+            android:id="@+id/action_placesv2_to_placeDetail3v2"
+            app:destination="@id/placeDetail3v2" />
+    </fragment>
+    <fragment
+        android:id="@+id/placeDetailv2"
+        android:name="com.example.fragment_app.PlaceDetailv2"
+        android:label="fragment_place_detailv2"
+        tools:layout="@layout/fragment_place_detailv2" >
+        <action
+            android:id="@+id/action_placeDetailv2_to_suggestedPlacesFragmentv1"
+            app:destination="@id/suggestedPlacesFragmentv1" />
+    </fragment>
+    <fragment
+        android:id="@+id/placeDetail2v2"
+        android:name="com.example.fragment_app.PlaceDetail2v2"
+        android:label="fragment_place_detail2v2"
+        tools:layout="@layout/fragment_place_detail2v2" >
+        <action
+            android:id="@+id/action_placeDetail2v2_to_suggestedPlacesFragmentv2"
+            app:destination="@id/suggestedPlacesFragmentv2" />
+    </fragment>
+    <fragment
+        android:id="@+id/placeDetail3v2"
+        android:name="com.example.fragment_app.PlaceDetail3v2"
+        android:label="fragment_place_detail3v2"
+        tools:layout="@layout/fragment_place_detail3v2" >
+        <action
+            android:id="@+id/action_placeDetail3v2_to_suggestedPlacesFragmentv3"
+            app:destination="@id/suggestedPlacesFragmentv3" />
+    </fragment>
+    <fragment
+        android:id="@+id/suggestedPlacesFragmentv1"
+        android:name="com.example.fragment_app.SuggestedPlacesFragmentv1"
+        android:label="fragment_suggested_places_fragmentv1"
+        tools:layout="@layout/fragment_suggested_places_fragmentv1" />
+    <fragment
+        android:id="@+id/suggestedPlacesFragmentv2"
+        android:name="com.example.fragment_app.SuggestedPlacesFragmentv2"
+        android:label="fragment_suggested_places_fragmentv2"
+        tools:layout="@layout/fragment_suggested_places_fragmentv2" />
+    <fragment
+        android:id="@+id/suggestedPlacesFragmentv3"
+        android:name="com.example.fragment_app.SuggestedPlacesFragmentv3"
+        android:label="fragment_suggested_places_fragmentv3"
+        tools:layout="@layout/fragment_suggested_places_fragmentv3" />
 </navigation>
